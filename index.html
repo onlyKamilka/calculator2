@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор | Современный дизайн</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="gradient-bg" aria-hidden="true">
+      <div class="gradient-bg__orb gradient-bg__orb--1"></div>
+      <div class="gradient-bg__orb gradient-bg__orb--2"></div>
+      <div class="gradient-bg__orb gradient-bg__orb--3"></div>
+    </div>
+
+    <div class="container">
+      <div class="calculator-glass">
+        <div class="glass-bar"></div>
+
+        <div class="calculator">
+          <div class="calculator__display-area">
+            <div class="calculator__display-wrapper">
+              <div class="calculator__display-preview" aria-hidden="true">
+                0
+              </div>
+              <div class="calculator__display" id="mainDisplay">0</div>
+            </div>
+            <div
+              class="calculator__history"
+              id="historyDisplay"
+              aria-hidden="true"
+            ></div>
+          </div>
+
+          <div class="calculator__keys">
+            <button class="key key--function" data-action="clear">AC</button>
+            <button class="key key--function" data-action="negate">+/-</button>
+            <button class="key key--function" data-action="percent">%</button>
+            <button class="key key--operator" data-action="divide">÷</button>
+
+            <button class="key key--number">7</button>
+            <button class="key key--number">8</button>
+            <button class="key key--number">9</button>
+            <button class="key key--operator" data-action="multiply">×</button>
+
+            <button class="key key--number">4</button>
+            <button class="key key--number">5</button>
+            <button class="key key--number">6</button>
+            <button class="key key--operator" data-action="subtract">-</button>
+
+            <button class="key key--number">1</button>
+            <button class="key key--number">2</button>
+            <button class="key key--number">3</button>
+            <button class="key key--operator" data-action="add">+</button>
+
+            <button class="key key--number key--zero">0</button>
+            <button class="key key--number" data-action="decimal">.</button>
+            <button class="key key--equal" data-action="calculate">=</button>
+          </div>
+        </div>
+
+        <div class="glass-signature">
+          <span class="glass-signature__dot"></span>
+          calculator
+          <span class="glass-signature__dot"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
